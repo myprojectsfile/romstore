@@ -1,0 +1,20 @@
+<!-- <nav>
+  <ul>
+    <li>
+      <a href="" [routerLink]="['/home']">home</a>
+    </li>
+    <li>
+      <a href="" [routerLink]="['/profile']">profile</a>
+    </li>
+    <li>
+      <a href="" [routerLink]="['/profile/profilePhoto']">profile profile photo</a>
+    </li>
+  </ul>
+</nav> -->
+<mat-toolbar color="primary" class="mat-elevation-z5">
+  <mat-toolbar-row>
+    <button *ngIf="!isSignedIn()" mat-button (click)="signIn()">ورود به سامانه</button>
+    <button *ngIf="isSignedIn()" mat-button (click)="signOut()">خروج</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

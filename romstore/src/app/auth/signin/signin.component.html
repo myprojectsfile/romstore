@@ -1,0 +1,17 @@
+<div dir="rtl">
+  <p mat-dialog-title>ورود به سامانه</p>
+  <mat-dialog-content>
+    <form>
+      <mat-form-field>
+        <input matInput placeholder="نام کاربری" name="username" [(ngModel)]="username" />
+      </mat-form-field>
+      <mat-form-field>
+        <input type="password" matInput placeholder="کلمه عبور" name="password" [(ngModel)]="password" />
+      </mat-form-field>
+    </form>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-raised-button (click)="signIn()" color="primary">ورود</button>
+    <button mat-button [mat-dialog-close]="false">انصراف</button>
+  </mat-dialog-actions>
+</div>

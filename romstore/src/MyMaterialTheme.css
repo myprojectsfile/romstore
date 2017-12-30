@@ -1,0 +1,7 @@
+.mat-simple-snackbar, .mat-button, .mat-fab, .mat-icon-button, .mat-mini-fab, .mat-raised-button, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .mat-dialog-title, .mat-form-field {
+  font-family: Calibri,Tahoma,Roboto;
+}
+
+.mat-simple-snackbar{
+  direction: rtl;
+}
